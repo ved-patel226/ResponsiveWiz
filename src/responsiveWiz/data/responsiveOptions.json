@@ -1,0 +1,73 @@
+{
+    "0": {
+        "dimensions": {
+            "1920x1080": "Full HD (Desktop)",
+            "1366x768": "HD (Laptop)",
+            "1280x720": "HD (Mobile)",
+            "1440x900": "WXGA+ (Desktop)",
+            "1536x864": "HD+ (Laptop)",
+            "768x1280": "Vertical Mobile",
+            "1024x768": "XGA (Tablet)",
+            "2560x1440": "2K (Desktop)",
+            "3840x2160": "4K (Desktop)",
+            "360x640": "Mobile"
+        }
+    },
+    "1": {
+        "dimensions": {
+            "1920x1080": "Full HD (Desktop)",
+            "1366x768": "HD (Laptop)",
+            "1280x720": "HD (Mobile)",
+            "1440x900": "WXGA+ (Desktop)",
+            "1536x864": "HD+ (Laptop)",
+            "768x1280": "Vertical Mobile",
+            "1024x768": "XGA (Tablet)",
+            "2560x1440": "2K (Desktop)",
+            "3840x2160": "4K (Desktop)",
+            "360x640": "Mobile",
+            "1600x900": "HD+ (Desktop)",
+            "1680x1050": "WSXGA+ (Desktop)",
+            "1920x1200": "WUXGA (Desktop)",
+            "2560x1600": "WQXGA (Desktop)",
+            "1440x2560": "Mobile 2K",
+            "750x1334": "iPhone 6/7/8 (Mobile)",
+            "1125x2436": "iPhone X (Mobile)",
+            "1242x2688": "iPhone XR (Mobile)",
+            "2732x2048": "iPad Pro (Tablet)",
+            "320x568": "Small Mobile"
+        }
+    },
+    "2": {
+        "dimensions": {
+            "1920x1080": "Full HD (Desktop)",
+            "1366x768": "HD (Laptop)",
+            "1280x720": "HD (Mobile)",
+            "1440x900": "WXGA+ (Desktop)",
+            "1536x864": "HD+ (Laptop)",
+            "768x1280": "Vertical Mobile",
+            "1024x768": "XGA (Tablet)",
+            "2560x1440": "2K (Desktop)",
+            "3840x2160": "4K (Desktop)",
+            "360x640": "Mobile",
+            "1600x900": "HD+ (Desktop)",
+            "1680x1050": "WSXGA+ (Desktop)",
+            "1920x1200": "WUXGA (Desktop)",
+            "2560x1600": "WQXGA (Desktop)",
+            "1440x2560": "Mobile 2K",
+            "750x1334": "iPhone 6/7/8 (Mobile)",
+            "1125x2436": "iPhone X (Mobile)",
+            "1242x2688": "iPhone XR (Mobile)",
+            "2732x2048": "iPad Pro (Tablet)",
+            "320x568": "Small Mobile",
+            "1920x1440": "Custom HD",
+            "1440x960": "Custom Mobile",
+            "1360x768": "Custom Laptop",
+            "1024x600": "Small Tablet",
+            "2880x1800": "MacBook Retina",
+            "3000x2000": "High-End Desktop",
+            "1600x1200": "UXGA (Desktop)",
+            "1280x1024": "SXGA (Desktop)",
+            "1280x854": "iPad Classic"
+        }
+    }
+}
