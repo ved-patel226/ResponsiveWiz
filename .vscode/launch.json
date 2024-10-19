@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Scraping Script",
+            "type": "debugpy",                                // Updated to debugpy
+            "request": "launch",
+            "program": "${workspaceFolder}/src/responsiveWiz/backend/scraping.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--animation-experimental",
+                "--hide-output",
+                "--url",
+                "https://ved.rocks/"
+            ],
+            "python": "/usr/bin/python"
+        }
+    ]
+}
