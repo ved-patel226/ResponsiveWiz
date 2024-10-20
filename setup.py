@@ -21,6 +21,11 @@ setup(
         "selenium",
         "termcolor",
         "tqdm",
+        "pillow",
+        "flask",
+        "flaskwebgui",
+        "flask_socketio",
+        "matplotlib",
     ],
     include_package_data=True,
     package_data={

@@ -1,13 +1,4 @@
-from selenium import webdriver
-import time
+from PIL import Image
 
-driver = webdriver.Chrome()
-
-driver.get("https://ved.rocks/")
-
-with open('src/responsiveWiz/data/disableAnimations.js', 'r') as file:
-    js_code = file.read()
-    
-driver.execute_script(js_code)
-
-time.sleep(5)
+img = Image.open('src/responsiveWiz/uploads/ved.rocks/320x568/1.png')
+img.show()

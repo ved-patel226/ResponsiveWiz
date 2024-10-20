@@ -15,6 +15,8 @@ import argparse
 import shutil
 from tqdm import tqdm
 
+print("Scraping the website for screenshots", "green")
+
 class ResponsiveWiz:
     def __init__(self, args):
         self.chrome_options = Options()
@@ -23,6 +25,9 @@ class ResponsiveWiz:
             self.chrome_options.add_argument("--no-sandbox")
             self.chrome_options.add_argument("--disable-dev-shm-usage")
             print("Hiding output", "yellow")
+        
+        assert int(args.level) in [0, 1, 2], "Level should be 0, 1 or 2"
+        self.level = args.level
                     
         dir_path = f'src/responsiveWiz/uploads/{args.url.replace("https://", "").replace("/", "")}'
         if os.path.exists(dir_path):
@@ -46,7 +51,7 @@ class ResponsiveWiz:
         print("\n")
     
     def save_screenshots(self):
-        dimensions = self.__get_json_data(level=2)
+        dimensions = self.__get_json_data(level=self.level)
 
         len_dimensions = len(dimensions)
         
@@ -86,16 +91,14 @@ class ResponsiveWiz:
                     viewport_height = self.driver.execute_script("return window.innerHeight")
                     scroll_position = self.driver.execute_script("return window.pageYOffset")
                     
-                    # Update screenshot path to include the part number
                     screenshot_path_update = f"{base_dir}/{parts}.png"
-                    self.driver.save_screenshot(screenshot_path_update)  # Save the screenshot with the updated path
+                    self.driver.save_screenshot(screenshot_path_update)
 
                     pbar.update(1)
-
-
-                    
-
-
+        
+        base_dir.split('/')
+        base_dir = '/'.join(base_dir.split('/')[:-1])
+        print(f"Saved screenshots at {base_dir}", "green") 
     
     def quit(self):
         self.driver.quit()
@@ -121,6 +124,7 @@ def main() -> None:
     parser.add_argument('--animation-experimental', action='store_true', help='Disables Animations/Transistions in the webpage for cleaner screenshots')
     parser.add_argument('--url', type=str, required=True, help='The URL of the website to take screenshots of')
     parser.add_argument('--hide-output', action='store_true', help='Hides the live preview of the screenshots being taken')
+    parser.add_argument('--level', type=str, required=True, help='How many types of screens to select? (0, 1, 2)')
     
     args = parser.parse_args()
     
